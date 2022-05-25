@@ -1,0 +1,140 @@
+
+.reading-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #262626;
+	height: 100%;
+	align-items: center;
+}
+
+.reading-header__navbar {
+	position: relative;	
+	min-width: 508px;
+	text-align: center;
+	justify-content: center;
+}
+
+/*.reading-navbar__previous-btn {
+	position: absolute;
+	left: 0;
+}*/
+
+.reading-navbar__previous-btn, .reading-navbar__next-btn {
+	margin-right: 32px;
+	margin-left: 32px;
+}
+
+.reading-navbar__previous-btn .anticon, .reading-navbar__next-btn .anticon {
+	color: #595959;
+	font-size: 20px;
+}
+
+
+/*.reading-navbar__next-btn {
+	position: absolute;
+	right: 0;
+}*/
+
+.reading-detail {
+	margin-top: 1rem;
+}
+
+.reading-detail > div {
+	// margin: 0 auto 34px;
+}
+
+.reading-detail__page-container{
+	display: flex;
+	align-items: center;
+	max-width: 100%;
+	width: 500px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page-chapter {
+	max-width: 500px;
+	min-width: 500px;
+	max-height: 100%;
+}
+
+.page-chapter img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: opacity .5s;
+	opacity: 0;
+}
+
+.page-chapter img.ng-lazyloaded {
+	opacity: 1;
+}
+
+.page-cover {
+	max-width: 776px;
+	height: auto;
+}
+
+.reading-navbar__chapter {
+	position: relative;
+	width: 100%;
+}
+
+/*.reading-navbar__chapter input:checked ~ .reading-navbar__chapter-list--wrapper {
+	opacity: 1;
+	top: 100%;
+}
+*/
+.reading-navbar__chapter-list--wrapper {
+	position: absolute;
+	width: 100%;
+	max-width: 100%;
+	margin-top: 10px;
+	opacity: 1;
+	top: 100%;
+	transition: all 0.3s ease;	
+
+}
+
+.reading-navbar__chapter-list--wrapper.hidden {
+	bottom: 300%;
+	/*transform: scale(0.3);*/
+	opacity: 0.5;
+	transition: all 0.3s ease;	
+	top: unset;
+}
+
+.currently-reading {
+	font-weight: 600;
+}
+
+
+.chapter-list__container {
+	width: 350px;
+	min-width: 294px;
+	background-color: var(--bg-color-secondary);
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	padding: 12px 0;
+	box-shadow: 0 2px 8px rgba(0,0,0,.45);
+}
+
+.section__list-item.currently-reading {
+	background-color: #35311D;
+}
+
+.currently-reading .section__sub-description {
+	font-weight: 600;
+}
+
+.currently-reading .section__text--s-small {
+	font-weight: 600;
+	color: var(--main-color);
+}
+
+.current-chapter {
+	cursor: pointer;
+}

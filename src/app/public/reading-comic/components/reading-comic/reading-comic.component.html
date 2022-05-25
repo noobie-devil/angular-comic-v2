@@ -1,0 +1,38 @@
+<app-reading-header></app-reading-header>
+<main style="margin: 0 auto;">
+	<div class="container">
+		<div class="reading-detail" *ngIf="urlChapterImagesComic$">
+			<div class="reading-detail__page-wrapper" *ngFor="let url of (urlChapterImagesComic$ | async)">
+				<div class="reading-detail__page-container">
+					<div class="page-chapter">
+						<img [lazyLoad]="url" alt="">
+					</div>
+				</div>
+
+			</div>
+			<!-- <div class="reading-detail__page-wrapper">
+				<div class="reading-detail__page-container">
+					<div class="page-chapter">
+						<img src="assets/page-chapter-002.jpg" alt="">
+					</div>
+				</div>
+
+			</div>
+
+			<div class="reading-detail__page-wrapper">
+				<div class="reading-detail__page-container">
+					<div class="page-chapter">
+						<img src="assets/page-chapter-003.jpg" alt="">
+					</div>
+				</div>
+
+			</div> -->
+
+
+
+		</div>
+
+
+
+	</div>
+</main>

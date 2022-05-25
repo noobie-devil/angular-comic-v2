@@ -1,0 +1,247 @@
+<app-standard-page>
+	<main>
+		<div class="container">
+			
+			<div class="row" style="row-gap: 0px; margin-left: -16px; margin-right: -16px;">
+				<!-- Main Content -->
+				<div class="main-content flex-col-8" style="padding-left: 30px;">
+					<div class="page-section">
+						<div class="section-wrapper">
+							<div class="section__img">
+								<img src="{{ (detailsComic$ | async)?.urlCoverImageComic }}" alt="">
+							</div>
+							<div class="section__content">
+								<span class="section__title">{{ (detailsComic$ | async)?.nameComic }}</span>
+								
+								<span class="section__sub-description" *ngIf="(detailsComic$ | async)?.authors[0]">Tác giả: {{ (detailsComic$ | async)?.authors[0]?.nameAuthor }}</span>
+								
+								<span class="section__sub-description" *ngIf="(detailsComic$ | async)?.categories">
+									<ul class="list-inline list-inline--style-bullet">
+										<li *ngFor="let category of (detailsComic$ | async).categories">{{ category.name }}</li>
+									</ul>
+								</span>
+
+								<div class="section__sub-description">
+									<span class="stronger-text"><i class='bx bx-book-open'></i> {{ (detailsComic$ | async)?.viewCount }}</span>
+									<span class="stronger-text"><i class='bx bx-like'></i> {{ (detailsComic$ | async)?.rating }}</span>	
+								</div>
+								<!-- <div>NEW</div> -->
+								<div class="section__btn--wrapper">
+									<a class="btn btn-primary" routerLink="title/{{firstChapterComic?.seoAlias}}">Đọc Từ Đầu</a>
+								</div>
+							</div>
+							<div class="section__action">
+								<a class="btn btn-icon"><i class='bx bx-share-alt' ></i></a>
+
+							</div>
+						</div>
+						
+						
+					</div>
+					<!-- <div class="page-section d-flex-col">
+						<div class="section-wrapper">
+							<div class="section__header">
+								<div class="section__content section--none-padding">
+									<span class="section__title section__text--medium">311 chapters</span>
+									<span class="section__sub-description">Updated daily</span>
+
+								</div>
+								<div class="section__action">
+									<a href="" class="btn btn-icon"><i class='bx bx-bell' ></i></a>
+									<a href="" class="btn btn-icon"><i class='bx bx-sort-a-z' ></i></a>
+								</div>	
+							</div>
+							
+						</div>
+						<ul class="section__grid-list-row">
+							<li class="section__list-item">
+								<div class="section__img">
+									<img src="assets/comic1.png" alt="">
+								</div>
+								<div class="section__content">
+									<span class="section__sub-description">Chapter 1</span>
+								</div>
+							</li>
+
+							<li class="section__list-item">
+								<div class="section__img">
+									<img src="assets/comic1.png" alt="">
+								</div>
+								<div class="section__content">
+									<span class="section__sub-description">Chapter 1</span>
+								</div>
+							</li>
+
+							<li class="section__list-item">
+								<div class="section__img">
+									<img src="assets/comic1.png" alt="">
+								</div>
+								<div class="section__content">
+									<span class="section__sub-description">Chapter 1</span>
+								</div>
+							</li>
+
+							<li class="section__list-item">
+								<div class="section__img">
+									<img src="assets/comic1.png" alt="">
+								</div>
+								<div class="section__content">
+									<span class="section__sub-description">Chapter 1</span>
+								</div>
+							</li>
+
+							<li class="section__list-item">
+								<div class="section__img">
+									<img src="assets/comic1.png" alt="">
+								</div>
+								<div class="section__content">
+									<span class="section__sub-description">Chapter 1</span>
+								</div>
+							</li>
+
+							<li class="section__list-item">
+								<div class="section__img">
+									<img src="assets/comic1.png" alt="">
+								</div>
+								<div class="section__content">
+									<span class="section__sub-description">Chapter 1</span>
+								</div>
+							</li>
+
+							<li class="section__list-item">
+								<div class="section__img">
+									<img src="assets/comic1.png" alt="">
+								</div>
+								<div class="section__content">
+									<span class="section__sub-description">Chapter 1</span>
+								</div>
+							</li>
+
+							<li class="section__list-item">
+								<div class="section__img">
+									<img src="assets/comic1.png" alt="">
+								</div>
+								<div class="section__content">
+									<span class="section__sub-description">Chapter 1</span>
+								</div>
+							</li>
+
+							
+						</ul>
+						
+					</div> -->
+					<div class="page-section d-flex-col">
+						<app-chapters-comic [src]="(detailsComic$ | async)?.urlCoverImageComic"></app-chapters-comic>
+					</div>
+					
+
+				</div>
+
+
+
+				<!-- Side Bar -->
+				<div class=" flex-col-4" style="padding-left: 32px;">
+					<div class="page-section">
+						<div class="section-wrapper d-flex-col">
+							<div class="section__header">
+								<div class="section__content section--none-padding">
+									<span class="section__title section__text--medium">Chi Tiết</span>
+
+								</div>
+							</div>
+							<div class="section__sub-content" *ngIf="(detailsComic$ | async)?.categories">
+								<div class="section__title pb-05 section__text--small">Các Thể Loại</div>
+								<span class="text-outline" *ngFor="let category of (detailsComic$ | async).categories">{{ category.name }}</span>
+								
+								<div>
+									
+								</div>
+							</div>
+							<div class="section__sub-content">
+								<div class="section__title pb-05 section__text--small">Nội Dung</div>
+								<ul>
+									<li class="section__sub-description opacity-8" *ngIf="(detailsComic$ | async)?.description; else seoDescription" [innerHTML]="(detailsComic$ | async)?.description"></li>
+									<ng-template #seoDescription>
+										<li class="section__sub-description opacity-8">{{ (detailsComic$ | async)?.seoDescription }}</li>
+									</ng-template>
+									
+								</ul>
+							</div>
+
+							
+							<div class="section__sub-content" *ngIf="(detailsComic$ | async)?.authors?.length">
+								<div class="section__title pb-05 section__text--small">Tác Giả</div>
+								<div class="d-flex pb-05" *ngFor="let author of (detailsComic$ | async).authors">
+									<div class="d-flex" style="align-items: center;">
+										<span style="width: 40px; height: 40px; line-height: 40px; font-size: 20px;" class="ant-avatar ant-avatar-circle ant-avatar-icon">
+											<span role="img" aria-label="user" class="anticon anticon-user">
+												<svg viewBox="64 64 896 896" focusable="false" data-icon="user" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+													<path d="M858.5 763.6a374 374 0 00-80.6-119.5 375.63 375.63 0 00-119.5-80.6c-.4-.2-.8-.3-1.2-.5C719.5 518 760 444.7 760 362c0-137-111-248-248-248S264 225 264 362c0 82.7 40.5 156 102.8 201.1-.4.2-.8.3-1.2.5-44.8 18.9-85 46-119.5 80.6a375.63 375.63 0 00-80.6 119.5A371.7 371.7 0 00136 901.8a8 8 0 008 8.2h60c4.4 0 7.9-3.5 8-7.8 2-77.2 33-149.5 87.8-204.3 56.7-56.7 132-87.9 212.2-87.9s155.5 31.2 212.2 87.9C779 752.7 810 825 812 902.2c.1 4.4 3.6 7.8 8 7.8h60a8 8 0 008-8.2c-1-47.8-10.9-94.3-29.5-138.2zM512 534c-45.9 0-89.1-17.9-121.6-50.4S340 407.9 340 362c0-45.9 17.9-89.1 50.4-121.6S466.1 190 512 190s89.1 17.9 121.6 50.4S684 316.1 684 362c0 45.9-17.9 89.1-50.4 121.6S557.9 534 512 534z"></path>
+												</svg>
+											</span>
+										</span>
+									</div>
+									<div class="pl-06">
+										<div class="section__title section__text--s-small" style="margin-bottom: -3px;">{{ author?.nameAuthor}}</div>
+										<span class="section__sub-description opacity-8 section__text--s-small">Author</span>
+									</div>
+								</div>
+
+								
+							</div>
+							<div class="section__sub-content">
+								<div class="section__title section__text--small">Thông Tin Khác</div>
+								<div class="grid-column-item">
+									<div class="section__sub-description opacity-8">Cập Nhật Lúc</div>
+									<div style="display: flex;">
+										<span class="section__sub-description" style="padding-right: 8px;">:</span>
+										<span class="section__sub-description">6 days ago</span>
+									</div>
+								</div>
+								<!-- <div class="grid-column-item">
+									<div class="section__sub-description opacity-8">Age Rating</div>
+									<div style="display: flex;">
+										<span class="section__sub-description" style="padding-right: 8px;">:</span>
+										<span class="section__sub-description">Older Teen(16+)</span>
+									</div>
+								</div>
+								<div class="grid-column-item">
+									<div class="section__sub-description opacity-8">Color</div>
+									<div style="display: flex;">
+										<span class="section__sub-description" style="padding-right: 8px;">:</span>
+										<span class="section__sub-description">Black and White</span>
+									</div>
+									
+								</div> -->
+
+							</div>
+							<!-- <div class="section__content section--none-padding">
+								<span class="section__title section__text--medium">About This</span>
+								<span class="section__title section__text--small">Genres</span>
+								<span class="section__sub-description">
+									<ul class="list-inline list-inline--style-bullet">
+										<li>Manhua</li>
+										<li>Action</li>
+									</ul>
+								</span>
+								<div class="section__sub-description">
+									<span class="stronger-text"><i class='bx bx-book-open'></i> 2,186,646</span>
+									<span class="stronger-text"><i class='bx bx-like'></i> 115</span>
+								</div>
+								<div class="section__btn--wrapper">
+									<a class="btn btn-primary">Read First Chapter for FREE</a>
+								</div>
+							</div> -->
+							
+						</div>
+						
+						
+					</div>	
+				</div>
+			</div>
+			
+		</div>
+	</main>
+
+
+</app-standard-page>

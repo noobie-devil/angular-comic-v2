@@ -1,0 +1,30 @@
+<swiper [config]="config" class="comic-container">
+  <div class="swiper-wrapper">
+    
+    <app-comic-card *ngFor="let comic of listComics" [comic]="comic" class="swiper-slide"></app-comic-card>
+    <!-- <ng-container *ngFor="let comic of listComics">
+      <app-comic-card [comic]="comic" class="swiper-slide"></app-comic-card>
+    </ng-container> -->
+    <!-- <app-comic-card class="swiper-slide"></app-comic-card>
+    <app-comic-card class="swiper-slide"></app-comic-card>
+    <app-comic-card class="swiper-slide"></app-comic-card>
+    <app-comic-card class="swiper-slide"></app-comic-card>
+    <app-comic-card class="swiper-slide"></app-comic-card>
+    <app-comic-card class="swiper-slide"></app-comic-card>
+    <app-comic-card class="swiper-slide"></app-comic-card>
+    <app-comic-card class="swiper-slide"></app-comic-card>
+    <app-comic-card class="swiper-slide"></app-comic-card>
+    <app-comic-card class="swiper-slide"></app-comic-card>
+    <app-comic-card class="swiper-slide"></app-comic-card>
+    <app-comic-card class="swiper-slide"></app-comic-card>
+    <app-comic-card class="swiper-slide"></app-comic-card>
+    <app-comic-card class="swiper-slide"></app-comic-card>
+    <app-comic-card class="swiper-slide"></app-comic-card>
+    <app-comic-card class="swiper-slide"></app-comic-card>
+    <app-comic-card class="swiper-slide"></app-comic-card> -->
+    
+  </div>
+  <div class="swiper-button-next swiper-button" style="right: 0;"></div>
+  <div class="swiper-button-prev swiper-button" style="left: 0;"></div>
+
+</swiper>

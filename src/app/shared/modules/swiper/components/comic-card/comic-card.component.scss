@@ -1,0 +1,135 @@
+.comic-card {
+	width: 181px;
+
+	.card-img {
+		width: 100%;
+		height: 272px;
+		transition: opacity .3 ease;
+
+		&:hover {
+			opacity: .6;
+			background: #000;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 8px;
+		}
+	}
+
+	.card-info {
+		display: flex;
+		flex-direction: column;
+
+		span{
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			&.comic-category {
+				color: var(--main-color);
+			}
+			
+		}
+	}
+
+}
+
+.card-expand {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: calc(100% - 37px);
+	z-index: 10001;
+	min-width: 110px;
+	padding-top: .1rem;
+
+	&__menu-list {
+		background-color: var(--bg-color-primary);
+		border-radius: 4px;
+		color: var(--text-color-light);
+		margin-top: .1rem;
+		display: none;
+
+		&.showing {
+			display: block;
+		}
+
+		&.is-child {
+			position: absolute;
+			left: calc(100%);
+			border-left: 8px solid transparent;
+			background-color: transparent;
+			display: none;
+
+			ul {
+				padding: 5px 0;
+				background-color: var(--bg-color-primary);
+				min-width: 110px;
+				border-radius: 4px;
+			}
+		}
+
+		ul {
+			padding: 5px 0;
+		}
+
+		ul > li {
+			padding-bottom: 5px;
+			padding-left: calc(100% - 86.1515%);
+		}
+
+		ul > li:hover {
+			background-color: rgba(255,255,255,0.15);
+		}
+
+		ul > li span {
+			vertical-align: middle;
+		}
+
+		ul > li span i {
+			padding-right: 4px;
+		}
+
+		li.has-sub-menu:hover .card-expand__menu-list.is-child {
+			display: inline;
+		}
+
+		span.has-chevron-right:after {
+			content: '\ea50';
+			font-family: boxicons !important;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			display: inline-block;
+			text-transform: none;
+			speak: none;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			position: absolute;
+			right: 0;
+			font-size: 18px;
+			color: var(--text-color-thin);
+		}
+
+
+	}
+
+	
+}
+
+.anticon.anticon-expand {
+	vertical-align: 0;
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: var(--text-color-light);
+	padding: 6px 6px;
+	background-color: rgba(0,0,0,0.7);
+	border-radius: 10px;
+	border: 1px solid var(--text-color-thin);
+}
+
+.anticon.anticon-expand:hover {
+	border: 1px solid var(--main-color);
+}

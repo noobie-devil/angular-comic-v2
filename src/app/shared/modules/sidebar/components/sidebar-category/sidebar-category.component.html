@@ -1,0 +1,63 @@
+<div class="side-categories">
+	<div class="side-categories__heading--wrapper">
+		<div class="side-categories__heading">
+			<h1>More to Explore</h1>
+		</div>
+	</div>
+	<div class="side-categories__grid-list--wrapper">
+		<div class="side-categories__grid-list" *ngIf="categories$">
+			<ng-container *ngFor="let category of categories$ | async">
+				<a routerLink="/explore/{{ category.seoAlias }}">
+					<img src="{{ category.urlImageCategory }}" alt="action" style="font-size: 44px; margin: 12px;" width="44" height="44">
+					<span style="text-transform: capitalize; color: rgba(255, 255, 255, 0.65); margin-left: 8px;">{{ category.name }}</span>
+					<span role="img" aria-label="right" class="anticon anticon-right QNhb0">
+						<svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+							<path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path>
+						</svg>
+					</span>
+				</a>
+			</ng-container>
+			<!-- <a href="">
+				<img src="assets/action.svg" alt="action" style="font-size: 44px; margin: 12px;" width="44" height="44">
+				<span style="text-transform: capitalize; color: rgba(255, 255, 255, 0.65); margin-left: 8px;">action</span>
+				<span role="img" aria-label="right" class="anticon anticon-right QNhb0">
+					<svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+						<path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path>
+					</svg>
+				</span>
+			</a>
+
+			<a href="">
+				<img src="assets/action.svg" alt="action" style="font-size: 44px; margin: 12px;" width="44" height="44">
+				<span style="text-transform: capitalize; color: rgba(255, 255, 255, 0.65); margin-left: 8px;">action</span>
+				<span role="img" aria-label="right" class="anticon anticon-right QNhb0">
+					<svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+						<path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path>
+					</svg>
+				</span>
+			</a>
+
+			<a href="">
+				<img src="assets/action.svg" alt="action" style="font-size: 44px; margin: 12px;" width="44" height="44">
+				<span style="text-transform: capitalize; color: rgba(255, 255, 255, 0.65); margin-left: 8px;">action</span>
+				<span role="img" aria-label="right" class="anticon anticon-right QNhb0">
+					<svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+						<path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path>
+					</svg>
+				</span>
+			</a>
+
+			<a href="">
+				<img src="assets/action.svg" alt="action" style="font-size: 44px; margin: 12px;" width="44" height="44">
+				<span style="text-transform: capitalize; color: rgba(255, 255, 255, 0.65); margin-left: 8px;">action</span>
+				<span role="img" aria-label="right" class="anticon anticon-right QNhb0">
+					<svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+						<path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path>
+					</svg>
+				</span>
+			</a> -->
+
+
+		</div>
+	</div>
+</div>

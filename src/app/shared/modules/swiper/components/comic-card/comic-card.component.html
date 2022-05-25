@@ -1,0 +1,112 @@
+<a routerLink="title/{{ comic.seoAlias }}" class="comic-card" (mouseover)="mouseOverEventListener()" (mouseout)="mouseOutEventListener()">
+	<div class="card-img">
+		<img src="{{ comic.urlCoverImageComic }}" alt="">
+
+	</div>
+	<div class="card-info">
+		<span class="comic-category">{{ comic.nameComic }}</span>
+		<span class="comic-views">{{ comic.viewCount }} reads</span>
+		<span class="comic-tags">
+			<ul>
+				<li>HOT</li>
+			</ul>
+		</span>
+	</div>
+	<div class="card-expand">
+		<span role="icon" aria-label="expand" class=" anticon anticon-expand" (click)="clickEventShowExpandMenu()">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+				<path d="M64 128c17.67 0 32-14.33 32-32s-14.33-32-32-32C46.33 64 32 78.33 32 96S46.33 128 64 128zM64 224C46.33 224 32 238.3 32 256s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 224 64 224zM64 384c-17.67 0-32 14.33-32 32s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 384 64 384z"/>
+			</svg>
+		</span>
+		<span class="card-expand__menu-list" [ngClass]="showingExpandMenu ? 'showing' : ''">
+			<ul>
+				<li>
+
+					<span><i class='bx bx-book-open'></i> Read</span>
+				</li>
+				<li>
+
+					<span><i class='bx bx-info-circle' ></i> View Info</span>
+				</li>
+				<li class="has-sub-menu">
+
+					<span class="has-chevron-right"><i class='bx bx-share-alt' ></i> Share </span>
+					<div class="card-expand__menu-list is-child">
+						<ul>
+							<li>
+								<span><i class='bx bxl-facebook-square'></i> Facebook</span>
+							</li>
+							<li>
+								<span><i class='bx bxl-twitter' ></i> Twitter</span>
+							</li>
+							<li>
+								<span><i class='bx bxl-reddit' ></i> Reddit</span>
+							</li>
+							<li>
+								<span><i class='bx bx-link-alt'></i> Copy Link</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</span>
+	</div>
+</a>
+
+
+<!-- For Test -->
+
+<!-- <a class="comic-card" (mouseover)="mouseOverEventListener()" (mouseout)="mouseOutEventListener()">
+	<div class="card-img">
+		<img src="assets/comic1.png" alt="">
+
+	</div>
+	<div class="card-info">
+		<span class="comic-category">Fantasy</span>
+		<span class="comic-views">619K reads</span>
+		<span class="comic-tags">
+			<ul>
+				<li>HOT</li>
+			</ul>
+		</span>
+	</div>
+	<div class="card-expand">
+		<span role="icon" aria-label="expand" class=" anticon anticon-expand" (click)="clickEventShowExpandMenu()">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+				<path d="M64 128c17.67 0 32-14.33 32-32s-14.33-32-32-32C46.33 64 32 78.33 32 96S46.33 128 64 128zM64 224C46.33 224 32 238.3 32 256s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 224 64 224zM64 384c-17.67 0-32 14.33-32 32s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 384 64 384z"/>
+			</svg>
+		</span>
+		<span class="card-expand__menu-list" [ngClass]="showingExpandMenu ? 'showing' : ''">
+			<ul>
+				<li>
+
+					<span><i class='bx bx-book-open'></i> Read</span>
+				</li>
+				<li>
+
+					<span><i class='bx bx-info-circle' ></i> View Info</span>
+				</li>
+				<li class="has-sub-menu">
+
+					<span class="has-chevron-right"><i class='bx bx-share-alt' ></i> Share </span>
+					<div class="card-expand__menu-list is-child">
+						<ul>
+							<li>
+								<span><i class='bx bxl-facebook-square'></i> Facebook</span>
+							</li>
+							<li>
+								<span><i class='bx bxl-twitter' ></i> Twitter</span>
+							</li>
+							<li>
+								<span><i class='bx bxl-reddit' ></i> Reddit</span>
+							</li>
+							<li>
+								<span><i class='bx bx-link-alt'></i> Copy Link</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</span>
+	</div>
+</a> -->

@@ -1,0 +1,39 @@
+<app-standard-page>
+	<main>
+		<div class="container">
+			<section class="home">
+
+			</section>
+			<div class="home-with-sidebar" style="row-gap: 0px; margin-left: -16px; margin-right: -16px;">
+				<!-- Main Content -->
+				<div class="main-content" style="padding-left: 30px; padding-right: 16px;">
+					<app-section-wrapper-widget *ngIf="newComics$" title="Truyện Mới Cập Nhật">
+						<app-swiper-comic-card [listComics]="newComics$ | async"></app-swiper-comic-card>
+					</app-section-wrapper-widget>
+
+					<app-section-wrapper-widget *ngIf="hotComics$" title="Truyện Hot">
+						<app-swiper-comic-card [listComics]="hotComics$ | async"></app-swiper-comic-card>
+					</app-section-wrapper-widget>
+
+					<!-- <app-section-wrapper-widget title="Truyện Hot">
+						<app-swiper-comic-card></app-swiper-comic-card>
+					</app-section-wrapper-widget> -->
+
+				</div>
+
+
+
+				<!-- Side Bar -->
+				<div class="sidebar" style="padding-left: 16px; padding-right: 16px;">
+					
+					<app-sign-in-advertise></app-sign-in-advertise>
+
+					<app-sidebar-category></app-sidebar-category>	
+				</div>
+			</div>
+
+		</div>
+	</main>
+
+
+</app-standard-page>

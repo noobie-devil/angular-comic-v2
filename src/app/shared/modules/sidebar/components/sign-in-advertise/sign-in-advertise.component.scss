@@ -1,0 +1,86 @@
+
+.sign-in-advertise {
+	background-image: url(/assets/sign-in-prompt-bg-side.png);
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 8px;
+	overflow: hidden;
+	background-size: cover;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: flex;
+	-webkit-justify-content: space-between;
+	-moz-box-pack: justify;
+	justify-content: space-between;
+	height: 112px;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	align-items: center;
+	margin-bottom: 44px;	
+}
+
+.advertise-heading {
+	display: -webkit-flex;
+	display: -moz-box;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	align-items: center;
+
+	&__content {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 28px;
+		margin-left: 12px;
+	}
+}
+
+.advertise-content {
+	display: -webkit-flex;
+	display: -moz-box;
+	display: flex;
+}
+
+.advertise-action {
+	display: -webkit-flex;
+	display: -moz-box;
+	display: flex;
+	-webkit-flex-direction: column-reverse;
+	-moz-box-direction: reverse;
+	flex-direction: column-reverse;
+
+	a {
+		border: none;
+		margin-top: 18px;
+	}
+
+	a.btn{
+		padding-top: .01px !important;
+		line-height: 30px;
+	}
+
+	button {
+		margin-left: 0;
+		width: 100%;
+		margin-top: 24px;
+	}
+}
+
+
+@media screen and (min-width: 1200px) {
+	.sign-in-advertise {
+		-webkit-flex-direction: column;
+		-moz-box-direction: normal;
+		flex-direction: column;
+		height: 225px;
+		-webkit-justify-content: center;
+		-moz-box-pack: center;
+		justify-content: center;
+		background-image: url(/assets/sign-in-prompt-bg-side.png);
+	}
+
+	.sign-in-advertise, .advertise-action {
+		-moz-box-orient: vertical;
+	}
+
+}

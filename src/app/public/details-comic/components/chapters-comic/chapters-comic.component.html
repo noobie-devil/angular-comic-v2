@@ -1,0 +1,90 @@
+<div class="section-wrapper">
+	<div class="section__header">
+		<div class="section__content section--none-padding">
+			<span class="section__title section__text--medium">311 chapters</span>
+			<span class="section__sub-description">Updated daily</span>
+
+		</div>
+		<div class="section__action">
+			<a href="" class="btn btn-icon"><i class='bx bx-bell' ></i></a>
+			<a href="" class="btn btn-icon"><i class='bx bx-sort-a-z' ></i></a>
+		</div>	
+	</div>
+
+</div>
+<ul class="section__grid-list-row" *ngIf="chaptersComic$">
+	<li class="section__list-item" *ngFor="let chapterComic of (chaptersComic$ | async)" (click)="navigateToReadingPage(chapterComic.seoAlias)" style="cursor: pointer;">
+		<div class="section__img">
+			<img [src]="imgThumbnail" alt="">
+		</div>
+		<div class="section__content">
+			<span class="section__sub-description">{{ chapterComic.nameChapter }}</span>
+		</div>
+	</li>
+
+	<!-- <li class="section__list-item">
+		<div class="section__img">
+			<img src="assets/comic1.png" alt="">
+		</div>
+		<div class="section__content">
+			<span class="section__sub-description">Chapter 1</span>
+		</div>
+	</li>
+
+	<li class="section__list-item">
+		<div class="section__img">
+			<img src="assets/comic1.png" alt="">
+		</div>
+		<div class="section__content">
+			<span class="section__sub-description">Chapter 1</span>
+		</div>
+	</li>
+
+	<li class="section__list-item">
+		<div class="section__img">
+			<img src="assets/comic1.png" alt="">
+		</div>
+		<div class="section__content">
+			<span class="section__sub-description">Chapter 1</span>
+		</div>
+	</li>
+
+	<li class="section__list-item">
+		<div class="section__img">
+			<img src="assets/comic1.png" alt="">
+		</div>
+		<div class="section__content">
+			<span class="section__sub-description">Chapter 1</span>
+		</div>
+	</li>
+
+	<li class="section__list-item">
+		<div class="section__img">
+			<img src="assets/comic1.png" alt="">
+		</div>
+		<div class="section__content">
+			<span class="section__sub-description">Chapter 1</span>
+		</div>
+	</li>
+
+	<li class="section__list-item">
+		<div class="section__img">
+			<img src="assets/comic1.png" alt="">
+		</div>
+		<div class="section__content">
+			<span class="section__sub-description">Chapter 1</span>
+		</div>
+	</li>
+
+	<li class="section__list-item">
+		<div class="section__img">
+			<img src="assets/comic1.png" alt="">
+		</div>
+		<div class="section__content">
+			<span class="section__sub-description">Chapter 1</span>
+		</div>
+	</li> -->
+
+
+</ul>
+

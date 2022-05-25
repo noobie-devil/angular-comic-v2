@@ -1,0 +1,48 @@
+// @import '~swiper/swiper.min.css';
+// @import '~swiper/components/navigation/navigation.min.css';
+.comic-container {
+	display: grid;
+	gap: 1rem;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+
+	::ng-deep a.comic-card {
+		color: var(--text-color-thin);
+	}
+	
+	&:hover {
+		.swiper-button-next.swiper-button, .swiper-button-prev.swiper-button {
+			opacity: 1;
+		}
+		.swiper-button.swiper-button-disabled, .swiper-button.swiper-button-disabled {
+			opacity: 0;
+		}
+	}
+}
+
+.swiper-button-next.swiper-button, .swiper-button-prev.swiper-button {
+	height: 100%;
+	top: 0;
+	background-color: rgba(0,0,0,.7);
+	padding: 0 20px;
+	color: var(--text-color-thin);
+	font-size: 1rem;
+	opacity: 0;
+	transition: .2s all linear;
+}
+
+
+.swiper-button-next.swiper-button:hover, .swiper-button-prev.swiper-button:hover {
+	opacity: 1;
+}
+
+.swiper-button-prev.swiper-button-disabled.swiper-button, .swiper-button-next.swiper-button-disabled.swiper-button {
+	opacity: 0;
+}
+
+.swiper-button-next.swiper-button::after , .swiper-button-prev.swiper-button::after {
+	font-size: 1.5rem;
+	font-weight: bold;
+}

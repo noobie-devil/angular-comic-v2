@@ -1,0 +1,649 @@
+<div>
+	<h2>{{title}}</h2>
+	<ng-content></ng-content>
+	<!-- <div class="swiper comic-container">
+		<div class="swiper-wrapper">
+			<a class="swiper-slide comic-card">
+				<div class="card-img">
+					<img src="img/comic1.png" alt="">
+
+				</div>
+				<div class="card-info">
+					<span class="comic-category">Fantasy</span>
+					<span class="comic-views">619K reads</span>
+					<span class="comic-tags">
+						<ul>
+							<li>HOT</li>
+						</ul>
+					</span>
+				</div>
+				<div class="card-expand">
+					<span role="icon" aria-label="expand" class=" anticon anticon-expand">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+							<path d="M64 128c17.67 0 32-14.33 32-32s-14.33-32-32-32C46.33 64 32 78.33 32 96S46.33 128 64 128zM64 224C46.33 224 32 238.3 32 256s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 224 64 224zM64 384c-17.67 0-32 14.33-32 32s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 384 64 384z"/>
+						</svg>
+					</span>
+					<span class="card-expand__menu-list">
+						<ul>
+							<li>
+
+								<span><i class='bx bx-book-open'></i> Read</span>
+							</li>
+							<li>
+
+								<span><i class='bx bx-info-circle' ></i> View Info</span>
+							</li>
+							<li class="has-sub-menu">
+
+								<span class="has-chevron-right"><i class='bx bx-share-alt' ></i> Share </span>
+								<div class="card-expand__menu-list is-child">
+									<ul>
+										<li>
+											<span><i class='bx bxl-facebook-square'></i> Facebook</span>
+										</li>
+										<li>
+											<span><i class='bx bxl-twitter' ></i> Twitter</span>
+										</li>
+										<li>
+											<span><i class='bx bxl-reddit' ></i> Reddit</span>
+										</li>
+										<li>
+											<span><i class='bx bx-link-alt'></i> Copy Link</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</span>
+				</div>
+			</a>
+			<a class="swiper-slide comic-card">
+				<div class="card-img">
+					<img src="img/comic2.png" alt="">
+				</div>
+				<div class="card-info">
+					<span class="comic-category">Horror</span>
+					<span class="comic-views">219.4K reads</span>
+					<span class="comic-tags">
+						<ul>
+							<li>HOT</li>
+						</ul>
+					</span>
+				</div>
+				<div class="card-expand">
+					<span role="icon" aria-label="expand" class=" anticon anticon-expand">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+							<path d="M64 128c17.67 0 32-14.33 32-32s-14.33-32-32-32C46.33 64 32 78.33 32 96S46.33 128 64 128zM64 224C46.33 224 32 238.3 32 256s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 224 64 224zM64 384c-17.67 0-32 14.33-32 32s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 384 64 384z"/>
+						</svg>
+					</span>
+					<span class="card-expand__menu-list">
+						<ul>
+							<li>
+
+								<span><i class='bx bx-book-open'></i> Read</span>
+							</li>
+							<li>
+
+								<span><i class='bx bx-info-circle' ></i> View Info</span>
+							</li>
+							<li class="has-sub-menu">
+
+								<span class="has-chevron-right"><i class='bx bx-share-alt' ></i> Share </span>
+								<div class="card-expand__menu-list is-child">
+									<ul>
+										<li>
+											<span><i class='bx bxl-facebook-square'></i> Facebook</span>
+										</li>
+										<li>
+											<span><i class='bx bxl-twitter' ></i> Twitter</span>
+										</li>
+										<li>
+											<span><i class='bx bxl-reddit' ></i> Reddit</span>
+										</li>
+										<li>
+											<span><i class='bx bx-link-alt'></i> Copy Link</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</span>
+				</div>
+			</a>
+			<a class="swiper-slide comic-card">
+				<div class="card-img">
+					<img src="img/comic3.png" alt="">
+				</div>
+				<div class="card-info">
+					<span class="comic-category">Comedy</span>
+					<span class="comic-views">129.8K reads</span>
+					<span class="comic-tags">
+						<ul>
+							<li>HOT</li>
+						</ul>
+					</span>
+				</div>
+				<div class="card-expand">
+					<span role="icon" aria-label="expand" class=" anticon anticon-expand">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+							<path d="M64 128c17.67 0 32-14.33 32-32s-14.33-32-32-32C46.33 64 32 78.33 32 96S46.33 128 64 128zM64 224C46.33 224 32 238.3 32 256s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 224 64 224zM64 384c-17.67 0-32 14.33-32 32s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 384 64 384z"/>
+						</svg>
+					</span>
+					<span class="card-expand__menu-list">
+						<ul>
+							<li>
+
+								<span><i class='bx bx-book-open'></i> Read</span>
+							</li>
+							<li>
+
+								<span><i class='bx bx-info-circle' ></i> View Info</span>
+							</li>
+							<li class="has-sub-menu">
+
+								<span class="has-chevron-right"><i class='bx bx-share-alt' ></i> Share </span>
+								<div class="card-expand__menu-list is-child">
+									<ul>
+										<li>
+											<span><i class='bx bxl-facebook-square'></i> Facebook</span>
+										</li>
+										<li>
+											<span><i class='bx bxl-twitter' ></i> Twitter</span>
+										</li>
+										<li>
+											<span><i class='bx bxl-reddit' ></i> Reddit</span>
+										</li>
+										<li>
+											<span><i class='bx bx-link-alt'></i> Copy Link</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</span>
+				</div>
+			</a>
+			<a class="swiper-slide comic-card">
+				<div class="card-img">
+					<img src="img/comic4.png" alt="">
+				</div>
+				<div class="card-info">
+					<span class="comic-category">Fantasy</span>
+					<span class="comic-views">259.5K reads</span>
+					<span class="comic-tags">
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</span>
+				</div>
+				<div class="card-expand">
+					<span role="icon" aria-label="expand" class=" anticon anticon-expand">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+							<path d="M64 128c17.67 0 32-14.33 32-32s-14.33-32-32-32C46.33 64 32 78.33 32 96S46.33 128 64 128zM64 224C46.33 224 32 238.3 32 256s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 224 64 224zM64 384c-17.67 0-32 14.33-32 32s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 384 64 384z"/>
+						</svg>
+					</span>
+					<span class="card-expand__menu-list">
+						<ul>
+							<li>
+
+								<span><i class='bx bx-book-open'></i> Read</span>
+							</li>
+							<li>
+
+								<span><i class='bx bx-info-circle' ></i> View Info</span>
+							</li>
+							<li class="has-sub-menu">
+
+								<span class="has-chevron-right"><i class='bx bx-share-alt' ></i> Share </span>
+								<div class="card-expand__menu-list is-child">
+									<ul>
+										<li>
+											<span><i class='bx bxl-facebook-square'></i> Facebook</span>
+										</li>
+										<li>
+											<span><i class='bx bxl-twitter' ></i> Twitter</span>
+										</li>
+										<li>
+											<span><i class='bx bxl-reddit' ></i> Reddit</span>
+										</li>
+										<li>
+											<span><i class='bx bx-link-alt'></i> Copy Link</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</span>
+				</div>
+			</a>
+			<a class="swiper-slide comic-card">
+				<div class="card-img">
+					<img src="img/comic5.png" alt="">
+				</div>
+				<div class="card-info">
+					<span class="comic-category">BL</span>
+					<span class="comic-views">599.1K reads</span>
+					<span class="comic-tags">
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</span>
+				</div>
+				<div class="card-expand">
+					<span role="icon" aria-label="expand" class=" anticon anticon-expand">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+							<path d="M64 128c17.67 0 32-14.33 32-32s-14.33-32-32-32C46.33 64 32 78.33 32 96S46.33 128 64 128zM64 224C46.33 224 32 238.3 32 256s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 224 64 224zM64 384c-17.67 0-32 14.33-32 32s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 384 64 384z"/>
+						</svg>
+					</span>
+					<span class="card-expand__menu-list">
+						<ul>
+							<li>
+
+								<span><i class='bx bx-book-open'></i> Read</span>
+							</li>
+							<li>
+
+								<span><i class='bx bx-info-circle' ></i> View Info</span>
+							</li>
+							<li class="has-sub-menu">
+
+								<span class="has-chevron-right"><i class='bx bx-share-alt' ></i> Share </span>
+								<div class="card-expand__menu-list is-child">
+									<ul>
+										<li>
+											<span><i class='bx bxl-facebook-square'></i> Facebook</span>
+										</li>
+										<li>
+											<span><i class='bx bxl-twitter' ></i> Twitter</span>
+										</li>
+										<li>
+											<span><i class='bx bxl-reddit' ></i> Reddit</span>
+										</li>
+										<li>
+											<span><i class='bx bx-link-alt'></i> Copy Link</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</span>
+				</div>
+			</a>
+			<a class="swiper-slide comic-card">
+				<div class="card-img">
+					<img src="img/comic6.png" alt="">
+				</div>
+				<div class="card-info">
+					<span class="comic-category">Romance</span>
+					<span class="comic-views">1.9M reads</span>
+					<span class="comic-tags">
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</span>
+				</div>
+				<div class="card-expand">
+					<span role="icon" aria-label="expand" class=" anticon anticon-expand">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+							<path d="M64 128c17.67 0 32-14.33 32-32s-14.33-32-32-32C46.33 64 32 78.33 32 96S46.33 128 64 128zM64 224C46.33 224 32 238.3 32 256s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 224 64 224zM64 384c-17.67 0-32 14.33-32 32s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 384 64 384z"/>
+						</svg>
+					</span>
+					<span class="card-expand__menu-list">
+						<ul>
+							<li>
+
+								<span><i class='bx bx-book-open'></i> Read</span>
+							</li>
+							<li>
+
+								<span><i class='bx bx-info-circle' ></i> View Info</span>
+							</li>
+							<li class="has-sub-menu">
+
+								<span class="has-chevron-right"><i class='bx bx-share-alt' ></i> Share </span>
+								<div class="card-expand__menu-list is-child">
+									<ul>
+										<li>
+											<span><i class='bx bxl-facebook-square'></i> Facebook</span>
+										</li>
+										<li>
+											<span><i class='bx bxl-twitter' ></i> Twitter</span>
+										</li>
+										<li>
+											<span><i class='bx bxl-reddit' ></i> Reddit</span>
+										</li>
+										<li>
+											<span><i class='bx bx-link-alt'></i> Copy Link</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</span>
+				</div>
+			</a>
+			<a class="swiper-slide comic-card">
+				<div class="card-img">
+					<img src="img/comic7.png" alt="">
+				</div>
+				<div class="card-info">
+					<span class="comic-category">Comedy</span>
+					<span class="comic-views">52.1K reads</span>
+					<span class="comic-tags">
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</span>
+				</div>
+				<div class="card-expand">
+					<span role="icon" aria-label="expand" class=" anticon anticon-expand">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+							<path d="M64 128c17.67 0 32-14.33 32-32s-14.33-32-32-32C46.33 64 32 78.33 32 96S46.33 128 64 128zM64 224C46.33 224 32 238.3 32 256s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 224 64 224zM64 384c-17.67 0-32 14.33-32 32s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 384 64 384z"/>
+						</svg>
+					</span>
+					<span class="card-expand__menu-list">
+						<ul>
+							<li>
+
+								<span><i class='bx bx-book-open'></i> Read</span>
+							</li>
+							<li>
+
+								<span><i class='bx bx-info-circle' ></i> View Info</span>
+							</li>
+							<li class="has-sub-menu">
+
+								<span class="has-chevron-right"><i class='bx bx-share-alt' ></i> Share </span>
+								<div class="card-expand__menu-list is-child">
+									<ul>
+										<li>
+											<span><i class='bx bxl-facebook-square'></i> Facebook</span>
+										</li>
+										<li>
+											<span><i class='bx bxl-twitter' ></i> Twitter</span>
+										</li>
+										<li>
+											<span><i class='bx bxl-reddit' ></i> Reddit</span>
+										</li>
+										<li>
+											<span><i class='bx bx-link-alt'></i> Copy Link</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</span>
+				</div>
+			</a>
+			<a class="swiper-slide comic-card">
+				<div class="card-img">
+					<img src="img/comic8.png" alt="">
+				</div>
+				<div class="card-info">
+					<span class="comic-category">BL</span>
+					<span class="comic-views">541K reads</span>
+					<span class="comic-tags">
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</span>
+				</div>
+				<div class="card-expand">
+					<span role="icon" aria-label="expand" class=" anticon anticon-expand">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+							<path d="M64 128c17.67 0 32-14.33 32-32s-14.33-32-32-32C46.33 64 32 78.33 32 96S46.33 128 64 128zM64 224C46.33 224 32 238.3 32 256s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 224 64 224zM64 384c-17.67 0-32 14.33-32 32s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 384 64 384z"/>
+						</svg>
+					</span>
+					<span class="card-expand__menu-list">
+						<ul>
+							<li>
+
+								<span><i class='bx bx-book-open'></i> Read</span>
+							</li>
+							<li>
+
+								<span><i class='bx bx-info-circle' ></i> View Info</span>
+							</li>
+							<li class="has-sub-menu">
+
+								<span class="has-chevron-right"><i class='bx bx-share-alt' ></i> Share </span>
+								<div class="card-expand__menu-list is-child">
+									<ul>
+										<li>
+											<span><i class='bx bxl-facebook-square'></i> Facebook</span>
+										</li>
+										<li>
+											<span><i class='bx bxl-twitter' ></i> Twitter</span>
+										</li>
+										<li>
+											<span><i class='bx bxl-reddit' ></i> Reddit</span>
+										</li>
+										<li>
+											<span><i class='bx bx-link-alt'></i> Copy Link</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</span>
+				</div>
+			</a>
+			<a class="swiper-slide comic-card">
+				<div class="card-img">
+					<img src="img/comic9.png" alt="">
+				</div>
+				<div class="card-info">
+					<span class="comic-category">Fantasy</span>
+					<span class="comic-views">284.5K reads</span>
+					<span class="comic-tags">
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</span>
+				</div>
+				<div class="card-expand">
+					<span role="icon" aria-label="expand" class=" anticon anticon-expand">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+							<path d="M64 128c17.67 0 32-14.33 32-32s-14.33-32-32-32C46.33 64 32 78.33 32 96S46.33 128 64 128zM64 224C46.33 224 32 238.3 32 256s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 224 64 224zM64 384c-17.67 0-32 14.33-32 32s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 384 64 384z"/>
+						</svg>
+					</span>
+					<span class="card-expand__menu-list">
+						<ul>
+							<li>
+
+								<span><i class='bx bx-book-open'></i> Read</span>
+							</li>
+							<li>
+
+								<span><i class='bx bx-info-circle' ></i> View Info</span>
+							</li>
+							<li class="has-sub-menu">
+
+								<span class="has-chevron-right"><i class='bx bx-share-alt' ></i> Share </span>
+								<div class="card-expand__menu-list is-child">
+									<ul>
+										<li>
+											<span><i class='bx bxl-facebook-square'></i> Facebook</span>
+										</li>
+										<li>
+											<span><i class='bx bxl-twitter' ></i> Twitter</span>
+										</li>
+										<li>
+											<span><i class='bx bxl-reddit' ></i> Reddit</span>
+										</li>
+										<li>
+											<span><i class='bx bx-link-alt'></i> Copy Link</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</span>
+				</div>
+			</a>
+			<a class="swiper-slide comic-card">
+				<div class="card-img">
+					<img src="img/comic10.png" alt="">
+				</div>
+				<div class="card-info">
+					<span class="comic-category">Action</span>
+					<span class="comic-views">203.5K reads</span>
+					<span class="comic-tags">
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</span>
+				</div>
+				<div class="card-expand">
+					<span role="icon" aria-label="expand" class=" anticon anticon-expand">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+							<path d="M64 128c17.67 0 32-14.33 32-32s-14.33-32-32-32C46.33 64 32 78.33 32 96S46.33 128 64 128zM64 224C46.33 224 32 238.3 32 256s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 224 64 224zM64 384c-17.67 0-32 14.33-32 32s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 384 64 384z"/>
+						</svg>
+					</span>
+					<span class="card-expand__menu-list">
+						<ul>
+							<li>
+
+								<span><i class='bx bx-book-open'></i> Read</span>
+							</li>
+							<li>
+
+								<span><i class='bx bx-info-circle' ></i> View Info</span>
+							</li>
+							<li class="has-sub-menu">
+
+								<span class="has-chevron-right"><i class='bx bx-share-alt' ></i> Share </span>
+								<div class="card-expand__menu-list is-child">
+									<ul>
+										<li>
+											<span><i class='bx bxl-facebook-square'></i> Facebook</span>
+										</li>
+										<li>
+											<span><i class='bx bxl-twitter' ></i> Twitter</span>
+										</li>
+										<li>
+											<span><i class='bx bxl-reddit' ></i> Reddit</span>
+										</li>
+										<li>
+											<span><i class='bx bx-link-alt'></i> Copy Link</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</span>
+				</div>
+			</a>
+			<a class="swiper-slide comic-card">
+				<div class="card-img">
+					<img src="img/comic11.png" alt="">
+				</div>
+				<div class="card-info">
+					<span class="comic-category">Romance</span>
+					<span class="comic-views">1.4M reads</span>
+					<span class="comic-tags">
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</span>
+				</div>
+				<div class="card-expand">
+					<span role="icon" aria-label="expand" class=" anticon anticon-expand">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+							<path d="M64 128c17.67 0 32-14.33 32-32s-14.33-32-32-32C46.33 64 32 78.33 32 96S46.33 128 64 128zM64 224C46.33 224 32 238.3 32 256s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 224 64 224zM64 384c-17.67 0-32 14.33-32 32s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 384 64 384z"/>
+						</svg>
+					</span>
+					<span class="card-expand__menu-list">
+						<ul>
+							<li>
+
+								<span><i class='bx bx-book-open'></i> Read</span>
+							</li>
+							<li>
+
+								<span><i class='bx bx-info-circle' ></i> View Info</span>
+							</li>
+							<li class="has-sub-menu">
+
+								<span class="has-chevron-right"><i class='bx bx-share-alt' ></i> Share </span>
+								<div class="card-expand__menu-list is-child">
+									<ul>
+										<li>
+											<span><i class='bx bxl-facebook-square'></i> Facebook</span>
+										</li>
+										<li>
+											<span><i class='bx bxl-twitter' ></i> Twitter</span>
+										</li>
+										<li>
+											<span><i class='bx bxl-reddit' ></i> Reddit</span>
+										</li>
+										<li>
+											<span><i class='bx bx-link-alt'></i> Copy Link</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</span>
+				</div>
+			</a>
+			<a class="swiper-slide comic-card">
+				<div class="card-img">
+					<img src="img/comic12.png" alt="">
+				</div>
+				<div class="card-info">
+					<span class="comic-category">Fantasy</span>
+					<span class="comic-views">141.3K reads</span>
+					<span class="comic-tags">
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</span>
+				</div>
+				<div class="card-expand">
+					<span role="icon" aria-label="expand" class=" anticon anticon-expand">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+							<path d="M64 128c17.67 0 32-14.33 32-32s-14.33-32-32-32C46.33 64 32 78.33 32 96S46.33 128 64 128zM64 224C46.33 224 32 238.3 32 256s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 224 64 224zM64 384c-17.67 0-32 14.33-32 32s14.33 32 32 32c17.67 0 32-14.33 32-32S81.67 384 64 384z"/>
+						</svg>
+					</span>
+					<span class="card-expand__menu-list">
+						<ul>
+							<li>
+
+								<span><i class='bx bx-book-open'></i> Read</span>
+							</li>
+							<li>
+
+								<span><i class='bx bx-info-circle' ></i> View Info</span>
+							</li>
+							<li class="has-sub-menu">
+
+								<span class="has-chevron-right"><i class='bx bx-share-alt' ></i> Share </span>
+								<div class="card-expand__menu-list is-child">
+									<ul>
+										<li>
+											<span><i class='bx bxl-facebook-square'></i> Facebook</span>
+										</li>
+										<li>
+											<span><i class='bx bxl-twitter' ></i> Twitter</span>
+										</li>
+										<li>
+											<span><i class='bx bxl-reddit' ></i> Reddit</span>
+										</li>
+										<li>
+											<span><i class='bx bx-link-alt'></i> Copy Link</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</span>
+				</div>
+			</a>
+
+
+		</div>
+		<div class="swiper-button-next swiper-button" style="right: 0;"></div>
+		<div class="swiper-button-prev swiper-button" style="left: 0;"></div>
+	</div> -->
+</div>
