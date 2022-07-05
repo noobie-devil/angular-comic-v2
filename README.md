@@ -2,26 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.1.
 
-## Development server
+## Configure
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Installing Angular CLI if you haven't already: `npm install -g @angular/cli`
+- Clone project from GitHub: git clone https://github.com/truongnguyenvan8801/angular-comic-v2
+- Go to the directory containing the project, run: `npm install`
+- Install web server from [HikiComic.API](https://github.com/quangbdhz/HikiComic.API) project, which provides APIs for us to get data(sample datasets about comics we prepared earlier)
 
-## Code scaffolding
+## Run
+- Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Simultaneously, let's make sure you have run Web Server from HikiComic. We will call on APIs from this for data.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
